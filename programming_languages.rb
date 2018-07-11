@@ -6,6 +6,8 @@ def reformat_languages(languages)
         new_hash[specific_lang] = data
         new_hash[specific_lang][:syle] = [:oo]
       end
+    else
+      
     end
   end
   new_hash
