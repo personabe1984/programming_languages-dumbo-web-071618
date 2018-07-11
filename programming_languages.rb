@@ -2,8 +2,8 @@ def reformat_languages(languages)
   new_hash = {}
   languages.each do |type, langs|
     if type == :oo
-      langs.each do |specific_lang,data|
-        puts specific_lang
+      langs.each do |specific_lang, data|
+        new_hash[specific_lang] = data
       end
     end
   end
