@@ -8,7 +8,7 @@ def reformat_languages(languages)
       end
     else
       langs.each do |specific_lang, data|
-        if new_hash[specific_lang].has_key? :style
+        if new_hash[specific_lang].has_key? "style"
           puts new_hash[specific_lang][:style]
         else
           new_hash[specific_lang] = data
