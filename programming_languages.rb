@@ -21,7 +21,7 @@ def reformat_languages(languages)
   new_hash
 end
 
-
+=begin 
 languages = {
   :oo => {
     :ruby => {
@@ -54,3 +54,4 @@ languages = {
   }
 }
 reformat_languages(languages)
+=end
