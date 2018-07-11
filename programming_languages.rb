@@ -4,6 +4,7 @@ def reformat_languages(languages)
     if type == :oo
       langs.each do |specific_lang, data|
         new_hash[specific_lang] = data
+        new_hash[specific_lang] = {:style: :oo}
       end
     end
   end
