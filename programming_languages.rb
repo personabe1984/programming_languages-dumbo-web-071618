@@ -17,7 +17,7 @@ def reformat_languages(languages)
       end
     end
   end
-  new_hash
+  #new_hash
 end
 
 
@@ -52,4 +52,4 @@ languages = {
  
   }
 }
-print reformat_languages(languages)
+reformat_languages(languages)
