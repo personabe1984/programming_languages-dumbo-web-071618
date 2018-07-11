@@ -10,6 +10,7 @@ def reformat_languages(languages)
       langs.each do |specific_lang, data|
         if specific_lang == :javascript
           new_hash[specific_lang][:style] << :functional
+          puts new_hash[specific_lang]
         else
           new_hash[specific_lang] = data
           new_hash[specific_lang][:style] = [:functional]
