@@ -4,15 +4,15 @@ def reformat_languages(languages)
     if type == :oo
       langs.each do |specific_lang, data|
         new_hash[specific_lang] = data
-        new_hash[specific_lang][:syle] = [:oo]
+        new_hash[specific_lang][:style] = [:oo]
       end
     else
       langs.each do |specific_lang, data|
         if new_hash[specific_lang].has_key? :style
-          puts new_hash[specific_lang][:syle]
+          puts new_hash[specific_lang][:style]
         else
           new_hash[specific_lang] = data
-          new_hash[specific_lang][:syle] = [:functional]
+          new_hash[specific_lang][:style] = [:functional]
         end
       end
     end
