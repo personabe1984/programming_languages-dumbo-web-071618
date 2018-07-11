@@ -42,4 +42,4 @@ languages = {
  
   }
 }
-reformat_languages(languages)
+print reformat_languages(languages)
