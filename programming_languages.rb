@@ -7,7 +7,11 @@ def reformat_languages(languages)
         new_hash[specific_lang][:syle] = [:oo]
       end
     else
-      
+      langs.each do |specific_lang, data|
+        if 
+        new_hash[specific_lang] = data
+        new_hash[specific_lang][:syle] = [:functional]
+      end
     end
   end
   new_hash
