@@ -9,7 +9,7 @@ def reformat_languages(languages)
     else
       langs.each do |specific_lang, data|
         if new_hash[specific_lang].has_key? :syle
-          
+          puts new_hash[specific_lang][:syle]
         else
           new_hash[specific_lang] = data
           new_hash[specific_lang][:syle] = [:functional]
