@@ -1,8 +1,11 @@
 def reformat_languages(languages)
   new_hash = {}
   languages.each do |type, langs|
-    puts type
+    if type == :oo
+      
+    end
   end
+  new_hash
 end
 
 
