@@ -8,16 +8,12 @@ def reformat_languages(languages)
       end
     else
       langs.each do |specific_lang, data|
-        if new_hash[specific_lang].has_key? "style"
-          puts new_hash[specific_lang][:style]
-        else
-          new_hash[specific_lang] = data
-          new_hash[specific_lang][:style] = [:functional]
-        end
+        new_hash[specific_lang] = data
+        new_hash[specific_lang][:style] = [:functional]
       end
     end
   end
-  #new_hash
+  new_hash
 end
 
 
@@ -52,4 +48,4 @@ languages = {
  
   }
 }
-reformat_languages(languages)
+print reformat_languages(languages)
